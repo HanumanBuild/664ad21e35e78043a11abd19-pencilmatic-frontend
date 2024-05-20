@@ -1,3 +1,5 @@
+const REACT_APP_PENCILMATIC_BACKEND_URL = 'https://moaxqbg.srv.hanuman.build';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
