@@ -42,9 +42,9 @@ function Dashboard() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold underline">Dashboard</h1>
-      <div className="flex space-x-4 mb-4">
-        <label>
+      <h1 className="text-3xl font-bold underline mb-4">Dashboard</h1>
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb-4">
+        <label className="flex items-center">
           Brush Color:
           <input
             type="color"
@@ -53,7 +53,7 @@ function Dashboard() {
             className="ml-2"
           />
         </label>
-        <label>
+        <label className="flex items-center">
           Brush Size:
           <input
             type="number"
@@ -63,8 +63,8 @@ function Dashboard() {
           />
         </label>
       </div>
-      <canvas ref={canvasRef} id="canvas" className="border"></canvas>
-      <button onClick={saveDrawing} className="bg-blue-500 text-white p-2 mt-4">Save Drawing</button>
+      <canvas ref={canvasRef} id="canvas" className="border w-full"></canvas>
+      <button onClick={saveDrawing} className="bg-blue-500 text-white p-2 mt-4 w-full md:w-auto">Save Drawing</button>
     </div>
   );
 }

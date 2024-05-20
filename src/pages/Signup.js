@@ -21,17 +21,17 @@ function Signup() {
   // Render the signup form
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold underline">Signup</h1>
+      <h1 className="text-3xl font-bold underline mb-4">Signup</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label>Email:</label>
+          <label className="block text-left">Email:</label>
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="border p-2 w-full" />
         </div>
         <div>
-          <label>Password:</label>
+          <label className="block text-left">Password:</label>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="border p-2 w-full" />
         </div>
-        <button type="submit" className="bg-blue-500 text-white p-2">Signup</button>
+        <button type="submit" className="bg-blue-500 text-white p-2 w-full">Signup</button>
       </form>
     </div>
   );
