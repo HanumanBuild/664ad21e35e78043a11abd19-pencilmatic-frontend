@@ -1,5 +1,3 @@
-const REACT_APP_PENCILMATIC_BACKEND_URL = 'https://moaxqbg.srv.hanuman.build';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -7,7 +5,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// Render the application
+const REACT_APP_PENCILMATIC_BACKEND_URL = 'https://moaxqbg.srv.hanuman.build';
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
@@ -17,5 +16,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// Report web vitals
 reportWebVitals();
